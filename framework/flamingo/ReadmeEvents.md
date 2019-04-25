@@ -5,7 +5,14 @@ Flamingo uses a builtin event router, which routes events for each request.
 This means that events are request-scoped, so you can assume that fired events should not
 cross request boundaries (and are bound to the same go routine).
 
-### Event interfaces
+## When to use Events
+
+Events can be used to fire "Domain Events" - that are events that have a understandable meaning in the domain.
+The publisher should do "fire and forget" and should not care about who publishes events.
+
+Do not use events as Hook and do not expect something need to happen when publishing an event.
+
+## Event interfaces
 
 An Event can be everything, usually a struct with a few fields.
 
