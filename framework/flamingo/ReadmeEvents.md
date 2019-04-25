@@ -24,7 +24,7 @@ LoginSucessEvent struct {
 
 Events should not have the current context in them!
 
-### Firing events
+## Firing events
 
 An Event is fired using the `EventRouter` 
 
@@ -59,7 +59,7 @@ func (controller *IndexController) Get(ctx context.Context, r *web.Request) web.
 }
 ```
 
-### Subscribing to events
+## Subscribing to events
 
 To listen to events you need to create a "Subscriber". 
 A Subscriber will get all events and need to decide which events it wants to handle:

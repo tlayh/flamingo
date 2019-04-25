@@ -1,6 +1,6 @@
 # Flamingo Sessions
 
-### General session usage
+## General session usage
 
 Session handling in Flamingo is done by the `web.Session` struct. You can get the current session by just
 request `*web.Session` in your `Inject()` function.
@@ -15,7 +15,7 @@ want to make sure it is properly persisted.
 
 Persistence is done automatically if you use `Values`.
 
-#### Session Configuration
+### Session Configuration
 
 Flamingo expects a `session.Store` dingo binding, this is currently handled via the `session.backend` config parameter.
 
